@@ -52,7 +52,7 @@ impl fmt::Display for InvalidToken {
 pub fn parse(token: impl AsRef<str>) -> Option<(UserId, i64)> {
     // The token consists of three base64-encoded parts
     // Tokens can be preceded by "Bot " (that's how the Discord API expects them)
-    let mut parts = token.as_ref().trim_start_matches("Bot ").split('.');
+    let mut parts = token.as_ref().trim().split('.');
 
     // First part must be a base64-encoded stringified user ID
     let user_id = base64::decode_config(parts.next()?, base64::URL_SAFE).ok()?;
