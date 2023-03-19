@@ -1,3 +1,12 @@
+
+
+
+
+
+
+
+
+
 [![ci-badge][]][ci] [![docs-badge][]][docs] [![guild-badge][]][guild] [![crates.io version]][crates.io link] [![rust-version-badge]][rust-version-link]
 
 # serenity
